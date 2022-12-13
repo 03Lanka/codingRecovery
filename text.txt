@@ -1,1 +1,3 @@
 adsf 코딩 재활중입니다 기모링~
+git add
+git commit -m ""
