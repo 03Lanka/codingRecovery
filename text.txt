@@ -5,7 +5,7 @@ adsf 코딩 재활중입니다 기모링~
 
 git add (파일명) : 스테이징하기.
 git commit -m "메세지" : 커밋하기.
-* git commit -am "메세지" : 수정된 모든 파일을 추가하고, 커밋함. (대신 처음 만든 파일은 수동으로 git add 해줘야 함.)
+* git commit -am "메세지" : 수정된 모든 파일을 추가하고, 커밋함. (단, 처음 파일을 생성한 경우에는 git add를 사용하여 수동으로 추가해줘야함.)
 
 git status : 스테이징한 파일 확인.
 git log --all --oneline : 커밋 기록들 확인. (q로 exit)
