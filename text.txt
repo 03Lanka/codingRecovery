@@ -3,11 +3,12 @@ adsf 코딩 재활중입니다 기모링~
 코드 -> 스테이징 -> 리포지토리
 
 
-git add (파일명) : 스테이징하기
-git commit -m "메세지" : 커밋하기
+git add (파일명) : 스테이징하기.
+git commit -m "메세지" : 커밋하기.
+* git commit -am "메세지" : 수정된 모든 파일을 추가하고, 커밋함.
 
-git status : 스테이징한 파일 확인
-git log --all --oneline : 커밋 기록들 확인 (q로 나감)
+git status : 스테이징한 파일 확인.
+git log --all --oneline : 커밋 기록들 확인. (q로 exit)
 
 커밋할때 최근 커밋과 지금 수정한 파일의 차이점을 확인하고 하면 좋은데, 이걸 도와주는 기능들이 있음.
 git diff : 터미널에서 보여주는데 가독성 별로라 안씀. 방향기 hjkl, q로 종료.
@@ -17,3 +18,4 @@ git difftool (커밋 아이디) : 해당 아이디에 속한 커밋과 현재 �
 git difftool (커밋 아이디) (커밋 아이디): 커밋간 비교도 가능.
 
 근데 그냥 difftool도 쓰지말고, vsc에 깔아둔 git graph 쓰셈.
+
