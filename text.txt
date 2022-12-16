@@ -5,7 +5,7 @@ adsf 코딩 재활중입니다 기모링~
 
 git add (파일명) : 스테이징하기.
 git commit -m "메세지" : 커밋하기.
-* git commit -am "메세지" : 수정된 모든 파일을 추가하고, 커밋함.
+* git commit -am "메세지" : 수정된 모든 파일을 추가하고, 커밋함. (대신 처음 만든 파일은 수동으로 git add 해줘야 함.)
 
 git status : 스테이징한 파일 확인.
 git log --all --oneline : 커밋 기록들 확인. (q로 exit)
@@ -19,3 +19,5 @@ git difftool (커밋 아이디) (커밋 아이디): 커밋간 비교도 가능.
 
 근데 그냥 difftool도 쓰지말고, vsc에 깔아둔 git graph 쓰셈.
 
+git branch (브랜치명) : 브랜치 만들기.
+git switch (브랜치명) : 해당 브랜치로 전환하기.
