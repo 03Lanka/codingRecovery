@@ -75,3 +75,16 @@ git clone (레포지토리 url) : 입력된 레포지토리를 복제합니다.
 branch를 만드는 방법은 github 사이트 또는 로컬에서 만든후에 푸시하면 됩니다.
 추후 개인 브랜치와 main 브랜치를 머지할때 로컬에서 해도 되지만, 일반적으로 코드 리뷰를 위해 깃허브에서 머지를 진행합니다.
 깃허브에서 머지를 하는 방법은 pull request를 사용하는 것으로, 사이트 내에서 충돌도 수정하고 커밋 메세지도 남기면서 진행할 수 있습니다.
+
+브랜치 분류 전략:
+1. GitFlow (Vincent Driessen)
+Main, Develop, Feature, Release, Hotfix로 브랜치 구성됩니다.
+Main: Main
+Develop: Main의 사본이며, Feature 브랜치에서 개발된 요소들이 머지되는 곳입니다.
+Feature: Develop 브랜치에서 개발을 하면 사고가 날 수 있기 때문에, 이 브랜치에서 기능들을 개발하고 Develop 브랜치에 머지합니다.
+Release: Develop 브랜치에서 Main 브랜치로 머지하기 전에, 테스트하는 브랜치입니다. 테스트가 끝나면 Main & Develop 브랜치 모두에게 머지합니다.
+Hotfix: Main 브랜치에서 치명적인 버그가 발생했고 Develop 브랜치까지 내려갈 여유가 없을때, Main 브랜치에서 바로 브랜치를 만들어 버그를 고친 후 머지합니다.
+
+2. Trunk-based
+Main 브랜치 하나로 구성되어 운영됩니다.
+새로운 기능이 필요할때마다, Main 브랜치에서 Feature 브랜치를 만들고 기능을 개발한 후에 머지합니다.
